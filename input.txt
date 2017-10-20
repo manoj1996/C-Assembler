@@ -1,0 +1,12 @@
+C DS 1
+MOV R1, &A
+MOV R2, &B
+MOV R3, &C
+MOV R4, *R1
+MOV R5, *R2
+JMP G
+MOV *R3, R5
+HLT
+G: MOV *R3, R4
+A DC 25
+B DC 30
